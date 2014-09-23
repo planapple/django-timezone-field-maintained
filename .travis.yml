@@ -10,8 +10,6 @@ python:
 env:
   - DJANGO='django>=1.4.2,<1.5' DB='postgres'
   - DJANGO='django>=1.4.2,<1.5' DB='sqlite'
-  - DJANGO='django>=1.5,<1.6' DB='postgres'
-  - DJANGO='django>=1.5,<1.6' DB='sqlite'
   - DJANGO='django>=1.6,<1.7' DB='postgres'
   - DJANGO='django>=1.6,<1.7' DB='sqlite'
 matrix:
