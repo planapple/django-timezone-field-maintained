@@ -1,10 +1,10 @@
 django-timezone-field-maintained
 ================================
 
-.. image:: https://api.travis-ci.org/maintained/django-timezone-field-maintained.png?branch=develop
+.. image:: https://api.travis-ci.org/maintained/django-timezone-field-maintained.png?branch=master
    :target: https://travis-ci.org/maintained/django-timezone-field-maintained
 
-.. image:: https://coveralls.io/repos/maintained/django-timezone-field-maintained.png?branch=develop
+.. image:: https://coveralls.io/repos/maintained/django-timezone-field-maintained.png?branch=master
    :target: https://coveralls.io/r/maintained/django-timezone-field-maintained
 
 .. image:: https://pypip.in/v/django-timezone-field-maintained.png
