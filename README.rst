@@ -1,17 +1,17 @@
-django-timezone-field
-=====================
+django-timezone-field-maintained
+================================
 
-.. image:: https://api.travis-ci.org/mfogel/django-timezone-field.png?branch=develop
-   :target: https://travis-ci.org/mfogel/django-timezone-field
+.. image:: https://api.travis-ci.org/maintained/django-timezone-field-maintained.png?branch=develop
+   :target: https://travis-ci.org/maintained/django-timezone-field-maintained
 
-.. image:: https://coveralls.io/repos/mfogel/django-timezone-field/badge.png?branch=develop
-   :target: https://coveralls.io/r/mfogel/django-timezone-field
+.. image:: https://coveralls.io/repos/maintained/django-timezone-field-maintained.png?branch=develop
+   :target: https://coveralls.io/r/maintained/django-timezone-field-maintained
 
-.. image:: https://pypip.in/v/django-timezone-field/badge.png
-   :target: https://crate.io/packages/django-timezone-field/
+.. image:: https://pypip.in/v/django-timezone-field-maintained.png
+   :target: https://crate.io/packages/django-timezone-field-maintained
 
-.. image:: https://pypip.in/d/django-timezone-field/badge.png
-   :target: https://crate.io/packages/django-timezone-field/
+.. image:: https://pypip.in/d/django-timezone-field-maintained.png
+   :target: https://crate.io/packages/django-timezone-field-maintained
 
 A Django app providing database and form fields for `pytz`__ timezone objects.
 
