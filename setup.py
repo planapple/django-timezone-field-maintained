@@ -21,7 +21,7 @@ def find_version(*file_paths):
 
 
 setup(
-    name='django-timezone-field',
+    name='django-timezone-field-maintained',
     version=find_version('timezone_field', '__init__.py'),
     author='Mike Fogel',
     author_email='mike@fogel.ca',
@@ -30,12 +30,12 @@ setup(
         'pytz timezone objects.'
     ),
     long_description=read('README.rst'),
-    url='http://github.com/mfogel/django-timezone-field/',
+    url='http://github.com/maintained/django-timezone-field-maintained/',
     license='BSD',
     packages=[
         'timezone_field',
     ],
-    install_requires=['django>=1.4.2', 'pytz'],
+    install_requires=['django>=1.6', 'pytz'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
