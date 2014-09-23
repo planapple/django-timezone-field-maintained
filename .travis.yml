@@ -8,6 +8,8 @@ python:
 env:
   - DJANGO='django>=1.6,<1.7' DB='postgres'
   - DJANGO='django>=1.6,<1.7' DB='sqlite'
+  - DJANGO='django>=1.7,<1.8' DB='postgres'
+  - DJANGO='django>=1.7,<1.8' DB='sqlite'
 before_install:
   - export PIP_USE_MIRRORS=true
 install:
