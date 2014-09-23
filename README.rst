@@ -111,5 +111,5 @@ __ http://pypi.python.org/pypi/django-timezone-field/
 __ http://www.pip-installer.org/
 __ https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 __ http://www.doughellmann.com/projects/virtualenvwrapper/
-__ https://github.com/mfogel/django-timezone-field/
+__ https://github.com/maintained/django-timezone-field-maintained/
 __ https://github.com/brosner/django-timezones/
