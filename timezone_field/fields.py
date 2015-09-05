@@ -78,7 +78,7 @@ class TimeZoneField(six.with_metaclass(models.SubfieldBase,
     def deconstruct(self):
         # as field attributes, we want to preserve the max_length and if it
         # exists, also the default the user has specified
-        keywords = {'max_length': TimeZoneField.MAX_LENGTH}
+        keywords = {'max_length': MAX_TIMEZONE_LENGTH}
         if self.default != models.fields.NOT_PROVIDED:
             keywords['default'] = self.default
 
@@ -110,7 +110,7 @@ else:
             [],                 # Positional arguments (not used)
             {                   # Keyword argument
                 'max_length': [
-                    'max_length', {'default': TimeZoneField.MAX_LENGTH},
+                    'max_length', {'default': MAX_TIMEZONE_LENGTH},
                 ],
             },
         )],
