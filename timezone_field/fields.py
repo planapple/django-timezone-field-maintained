@@ -1,10 +1,13 @@
 import pytz
 
+from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils import six
 from django.utils.encoding import smart_text, force_text
 
+MAX_TIMEZONE_LENGTH = getattr(settings, "MAX_TIMEZONE_LENGTH", 100)
+DEFAULT_TIME_ZONE = getattr(settings, "TIME_ZONE", "UTC")
 
 class TimeZoneFieldBase(models.Field):
     """
@@ -34,11 +37,11 @@ class TimeZoneFieldBase(models.Field):
     description = "A pytz timezone object"
 
     CHOICES = [(pytz.timezone(tz), tz) for tz in pytz.all_timezones]
-    MAX_LENGTH = 100
 
     def __init__(self, *args, **kwargs):
         defaults = {
-            'max_length': self.MAX_LENGTH,
+            'max_length': MAX_TIMEZONE_LENGTH,
+            'default': DEFAULT_TIME_ZONE,
             'choices': TimeZoneField.CHOICES,
         }
         defaults.update(kwargs)
