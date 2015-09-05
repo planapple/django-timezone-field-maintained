@@ -36,13 +36,13 @@ class TimeZoneFieldBase(models.Field):
     CHOICES = [(pytz.timezone(tz), tz) for tz in pytz.all_timezones]
     MAX_LENGTH = 100
 
-    def __init__(self, **kwargs):
+    def __init__(self, *args, **kwargs):
         defaults = {
             'max_length': self.MAX_LENGTH,
             'choices': TimeZoneField.CHOICES,
         }
         defaults.update(kwargs)
-        super(TimeZoneFieldBase, self).__init__(**defaults)
+        super(TimeZoneFieldBase, self).__init__(*args, **defaults)
 
     def get_internal_type(self):
         return 'CharField'
